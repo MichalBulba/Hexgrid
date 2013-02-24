@@ -19,7 +19,6 @@ package com.github.riotopsys.hexgrid;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.util.TypedValue;
 import android.view.View;
 import android.view.ViewGroup;
@@ -28,6 +27,7 @@ import android.widget.RemoteViews.RemoteView;
 @RemoteView
 public class HexGrid extends ViewGroup {
 
+	@SuppressWarnings("unused")
 	private static final String TAG = HexGrid.class.getSimpleName();
 	private int r = (int) TypedValue
 			.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 48, getResources()

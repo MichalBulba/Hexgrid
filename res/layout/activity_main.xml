@@ -3,86 +3,143 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-     >
+    tools:context=".MainActivity" >
 
     <com.github.riotopsys.hexgrid.HexGrid
         android:id="@+id/hexGrid1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true" 
-        app:radius="48dp"
-        >
+        android:layout_alignParentTop="true"
+        app:radius="62dp" >
 
-        
-        <include layout="@layout/circle"/>
-		<include layout="@layout/circle"/>
-		<include layout="@layout/circle"/>
-		<include layout="@layout/circle"/>
-		<include layout="@layout/circle"/>
-		<include layout="@layout/circle"/>
-		<include layout="@layout/circle"/>
-		<include layout="@layout/circle"/>
-		<include layout="@layout/circle"/>
-		<include layout="@layout/circle"/>
-		<include layout="@layout/circle"/>
-		<include layout="@layout/circle"/>
-		<include layout="@layout/circle"/>
-		<include layout="@layout/circle"/>
-		<include layout="@layout/circle"/>
-		<include layout="@layout/circle"/>
-		<include layout="@layout/circle"/>
-		<include layout="@layout/circle"/>
-		<include layout="@layout/circle"/>
-		<include layout="@layout/circle"/>
-		<include layout="@layout/circle"/>
-		<include layout="@layout/circle"/>
-		<include layout="@layout/circle"/>
-		<include layout="@layout/circle"/>
-		<include layout="@layout/circle"/>
-		<include layout="@layout/circle"/>
-		<include layout="@layout/circle"/>
-		<include layout="@layout/circle"/>
-		<include layout="@layout/circle"/>
-		<include layout="@layout/circle"/>
-		<include layout="@layout/circle"/>
-		<include layout="@layout/circle"/>
-		<include layout="@layout/circle"/>
-		<include layout="@layout/circle"/>
-		<include layout="@layout/circle"/>
-		<include layout="@layout/circle"/>
-		<include layout="@layout/circle"/>
-		<include layout="@layout/circle"/>
-		<include layout="@layout/circle"/>
-		<include layout="@layout/circle"/>
-		<include layout="@layout/circle"/>
-		<include layout="@layout/circle"/>
-		<include layout="@layout/circle"/>
-		<include layout="@layout/circle"/>
-		<include layout="@layout/circle"/>
-		<include layout="@layout/circle"/>
-		<include layout="@layout/circle"/>
-		<include layout="@layout/circle"/>
-		<include layout="@layout/circle"/>
-		<include layout="@layout/circle"/>
-		<include layout="@layout/circle"/>
-		<include layout="@layout/circle"/>
-		<include layout="@layout/circle"/>
-		<include layout="@layout/circle"/>
-		<include layout="@layout/circle"/>
-		<include layout="@layout/circle"/>
-		<include layout="@layout/circle"/>
-		<include layout="@layout/circle"/>
-		<include layout="@layout/circle"/>
-		<include layout="@layout/circle"/>
-		<include layout="@layout/circle"/>
-		<include layout="@layout/circle"/>
-		<include layout="@layout/circle"/>
-		<include layout="@layout/circle"/>
-		
-		
-      
+        <include layout="@layout/circle" />
+
+        <include layout="@layout/circle" />
+
+        <include layout="@layout/circle" />
+
+        <include layout="@layout/circle" />
+
+        <include layout="@layout/circle" />
+
+        <include layout="@layout/circle" />
+
+        <include layout="@layout/circle" />
+
+        <include layout="@layout/circle" />
+
+        <include layout="@layout/circle" />
+
+        <include layout="@layout/circle" />
+
+        <include layout="@layout/circle" />
+
+        <include layout="@layout/circle" />
+
+        <include layout="@layout/circle" />
+
+        <include layout="@layout/circle" />
+
+        <include layout="@layout/circle" />
+
+        <include layout="@layout/circle" />
+
+        <include layout="@layout/circle" />
+
+        <include layout="@layout/circle" />
+
+        <include layout="@layout/circle" />
+
+        <include layout="@layout/circle" />
+
+        <include layout="@layout/circle" />
+
+        <include layout="@layout/circle" />
+
+        <include layout="@layout/circle" />
+
+        <include layout="@layout/circle" />
+
+        <include layout="@layout/circle" />
+
+        <include layout="@layout/circle" />
+
+        <include layout="@layout/circle" />
+
+        <include layout="@layout/circle" />
+
+        <include layout="@layout/circle" />
+
+        <include layout="@layout/circle" />
+
+        <include layout="@layout/circle" />
+
+        <include layout="@layout/circle" />
+
+        <include layout="@layout/circle" />
+
+        <include layout="@layout/circle" />
+
+        <include layout="@layout/circle" />
+
+        <include layout="@layout/circle" />
+
+        <include layout="@layout/circle" />
+
+        <include layout="@layout/circle" />
+
+        <include layout="@layout/circle" />
+
+        <include layout="@layout/circle" />
+
+        <include layout="@layout/circle" />
+
+        <include layout="@layout/circle" />
+
+        <include layout="@layout/circle" />
+
+        <include layout="@layout/circle" />
+
+        <include layout="@layout/circle" />
+
+        <include layout="@layout/circle" />
+
+        <include layout="@layout/circle" />
+
+        <include layout="@layout/circle" />
+
+        <include layout="@layout/circle" />
+
+        <include layout="@layout/circle" />
+
+        <include layout="@layout/circle" />
+
+        <include layout="@layout/circle" />
+
+        <include layout="@layout/circle" />
+
+        <include layout="@layout/circle" />
+
+        <include layout="@layout/circle" />
+
+        <include layout="@layout/circle" />
+
+        <include layout="@layout/circle" />
+
+        <include layout="@layout/circle" />
+
+        <include layout="@layout/circle" />
+
+        <include layout="@layout/circle" />
+
+        <include layout="@layout/circle" />
+
+        <include layout="@layout/circle" />
+
+        <include layout="@layout/circle" />
+
+        <include layout="@layout/circle" />
     </com.github.riotopsys.hexgrid.HexGrid>
 
 </RelativeLayout>
