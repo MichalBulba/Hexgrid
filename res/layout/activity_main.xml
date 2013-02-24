@@ -8,523 +8,79 @@
 
     <com.github.riotopsys.hexgrid.HexGrid
         android:id="@+id/hexGrid1"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true" 
         app:radius="48dp"
         >
 
-        <ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            
-            android:scaleType="fitCenter"
-            android:src="@drawable/circle" />
-		<ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            
-            android:scaleType="fitCenter"
-            android:src="@drawable/circle" />
-		<ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            
-            android:scaleType="fitCenter"
-            android:src="@drawable/circle" />
-		<ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            
-            android:scaleType="fitCenter"
-            android:src="@drawable/circle" />
-		<ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            
-            android:scaleType="fitCenter"
-            android:src="@drawable/circle" />
-		<ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            
-            android:scaleType="fitCenter"
-            android:src="@drawable/circle" />
-		<ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            
-            android:scaleType="fitCenter"
-            android:src="@drawable/circle" />
-		<ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            
-            android:scaleType="fitCenter"
-            android:src="@drawable/circle" />
-		<ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            
-            android:scaleType="fitCenter"
-            android:src="@drawable/circle" />
-		<ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            
-            android:scaleType="fitCenter"
-            android:src="@drawable/circle" />
-		<ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            
-            android:scaleType="fitCenter"
-            android:src="@drawable/circle" />
-		<ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            
-            android:scaleType="fitCenter"
-            android:src="@drawable/circle" />
-		<ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            
-            android:scaleType="fitCenter"
-            android:src="@drawable/circle" />
-		<ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            
-            android:scaleType="fitCenter"
-            android:src="@drawable/circle" />
-		<ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            
-            android:scaleType="fitCenter"
-            android:src="@drawable/circle" />
-		<ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            
-            android:scaleType="fitCenter"
-            android:src="@drawable/circle" />
-		<ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            
-            android:scaleType="fitCenter"
-            android:src="@drawable/circle" />
-		<ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            
-            android:scaleType="fitCenter"
-            android:src="@drawable/circle" />
-		<ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            
-            android:scaleType="fitCenter"
-            android:src="@drawable/circle" />
-		<ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            
-            android:scaleType="fitCenter"
-            android:src="@drawable/circle" />
-		<ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            
-            android:scaleType="fitCenter"
-            android:src="@drawable/circle" />
-		<ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            
-            android:scaleType="fitCenter"
-            android:src="@drawable/circle" />
-		<ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            
-            android:scaleType="fitCenter"
-            android:src="@drawable/circle" />
-		<ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            
-            android:scaleType="fitCenter"
-            android:src="@drawable/circle" />
-		<ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            
-            android:scaleType="fitCenter"
-            android:src="@drawable/circle" />
-		<ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            
-            android:scaleType="fitCenter"
-            android:src="@drawable/circle" />
-		<ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            
-            android:scaleType="fitCenter"
-            android:src="@drawable/circle" />
-		<ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            
-            android:scaleType="fitCenter"
-            android:src="@drawable/circle" />
-		<ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            
-            android:scaleType="fitCenter"
-            android:src="@drawable/circle" />
-		<ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            
-            android:scaleType="fitCenter"
-            android:src="@drawable/circle" />
-		<ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            
-            android:scaleType="fitCenter"
-            android:src="@drawable/circle" />
-		<ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            
-            android:scaleType="fitCenter"
-            android:src="@drawable/circle" />
-		<ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            
-            android:scaleType="fitCenter"
-            android:src="@drawable/circle" />
-		<ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            
-            android:scaleType="fitCenter"
-            android:src="@drawable/circle" />
-		<ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            
-            android:scaleType="fitCenter"
-            android:src="@drawable/circle" />
-		<ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            
-            android:scaleType="fitCenter"
-            android:src="@drawable/circle" />
-		<ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            
-            android:scaleType="fitCenter"
-            android:src="@drawable/circle" />
-		<ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            
-            android:scaleType="fitCenter"
-            android:src="@drawable/circle" />
-		<ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            
-            android:scaleType="fitCenter"
-            android:src="@drawable/circle" />
-		<ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            
-            android:scaleType="fitCenter"
-            android:src="@drawable/circle" />
-		<ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            
-            android:scaleType="fitCenter"
-            android:src="@drawable/circle" />
-		<ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            
-            android:scaleType="fitCenter"
-            android:src="@drawable/circle" />
-		<ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            
-            android:scaleType="fitCenter"
-            android:src="@drawable/circle" />
-		<ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            
-            android:scaleType="fitCenter"
-            android:src="@drawable/circle" />
-		<ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            
-            android:scaleType="fitCenter"
-            android:src="@drawable/circle" />
-		<ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            
-            android:scaleType="fitCenter"
-            android:src="@drawable/circle" />
-		<ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            
-            android:scaleType="fitCenter"
-            android:src="@drawable/circle" />
-		<ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            
-            android:scaleType="fitCenter"
-            android:src="@drawable/circle" />
-		<ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            
-            android:scaleType="fitCenter"
-            android:src="@drawable/circle" />
-		<ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            
-            android:scaleType="fitCenter"
-            android:src="@drawable/circle" />
-		<ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            
-            android:scaleType="fitCenter"
-            android:src="@drawable/circle" />
-		<ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            
-            android:scaleType="fitCenter"
-            android:src="@drawable/circle" />
-		<ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            
-            android:scaleType="fitCenter"
-            android:src="@drawable/circle" />
-		<ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            
-            android:scaleType="fitCenter"
-            android:src="@drawable/circle" />
-		<ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            
-            android:scaleType="fitCenter"
-            android:src="@drawable/circle" />
-		<ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            
-            android:scaleType="fitCenter"
-            android:src="@drawable/circle" />
-		<ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            
-            android:scaleType="fitCenter"
-            android:src="@drawable/circle" />
-		<ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            
-            android:scaleType="fitCenter"
-            android:src="@drawable/circle" />
-		<ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            
-            android:scaleType="fitCenter"
-            android:src="@drawable/circle" />
-		<ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            
-            android:scaleType="fitCenter"
-            android:src="@drawable/circle" />
-		<ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            
-            android:scaleType="fitCenter"
-            android:src="@drawable/circle" />
-		<ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            
-            android:scaleType="fitCenter"
-            android:src="@drawable/circle" />
-		<ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            
-            android:scaleType="fitCenter"
-            android:src="@drawable/circle" />
-		<ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            
-            android:scaleType="fitCenter"
-            android:src="@drawable/circle" />
-		<ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            
-            android:scaleType="fitCenter"
-            android:src="@drawable/circle" />
-		<ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            
-            android:scaleType="fitCenter"
-            android:src="@drawable/circle" />
-		<ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            
-            android:scaleType="fitCenter"
-            android:src="@drawable/circle" />
-		<ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            
-            android:scaleType="fitCenter"
-            android:src="@drawable/circle" />
-		<ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            
-            android:scaleType="fitCenter"
-            android:src="@drawable/circle" />
-		<ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            
-            android:scaleType="fitCenter"
-            android:src="@drawable/circle" />
-		<ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            
-            android:scaleType="fitCenter"
-            android:src="@drawable/circle" />
-		<ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            
-            android:scaleType="fitCenter"
-            android:src="@drawable/circle" />
-		<ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            
-            android:scaleType="fitCenter"
-            android:src="@drawable/circle" />
-		<ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            
-            android:scaleType="fitCenter"
-            android:src="@drawable/circle" />
-		<ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            
-            android:scaleType="fitCenter"
-            android:src="@drawable/circle" />
-		<ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            
-            android:scaleType="fitCenter"
-            android:src="@drawable/circle" />
-		<ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            
-            android:scaleType="fitCenter"
-            android:src="@drawable/circle" />
-		<ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            
-            android:scaleType="fitCenter"
-            android:src="@drawable/circle" />
-		<ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            
-            android:scaleType="fitCenter"
-            android:src="@drawable/circle" />
-		<ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            
-            android:scaleType="fitCenter"
-            android:src="@drawable/circle" />
-		<ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            
-            android:scaleType="fitCenter"
-            android:src="@drawable/circle" />
-		<ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            
-            android:scaleType="fitCenter"
-            android:src="@drawable/circle" />
-		<ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            
-            android:scaleType="fitCenter"
-            android:src="@drawable/circle" />
-		<ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            
-            android:scaleType="fitCenter"
-            android:src="@drawable/circle" />
-		<ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            
-            android:scaleType="fitCenter"
-            android:src="@drawable/circle" />
+        
+        <include layout="@layout/circle"/>
+		<include layout="@layout/circle"/>
+		<include layout="@layout/circle"/>
+		<include layout="@layout/circle"/>
+		<include layout="@layout/circle"/>
+		<include layout="@layout/circle"/>
+		<include layout="@layout/circle"/>
+		<include layout="@layout/circle"/>
+		<include layout="@layout/circle"/>
+		<include layout="@layout/circle"/>
+		<include layout="@layout/circle"/>
+		<include layout="@layout/circle"/>
+		<include layout="@layout/circle"/>
+		<include layout="@layout/circle"/>
+		<include layout="@layout/circle"/>
+		<include layout="@layout/circle"/>
+		<include layout="@layout/circle"/>
+		<include layout="@layout/circle"/>
+		<include layout="@layout/circle"/>
+		<include layout="@layout/circle"/>
+		<include layout="@layout/circle"/>
+		<include layout="@layout/circle"/>
+		<include layout="@layout/circle"/>
+		<include layout="@layout/circle"/>
+		<include layout="@layout/circle"/>
+		<include layout="@layout/circle"/>
+		<include layout="@layout/circle"/>
+		<include layout="@layout/circle"/>
+		<include layout="@layout/circle"/>
+		<include layout="@layout/circle"/>
+		<include layout="@layout/circle"/>
+		<include layout="@layout/circle"/>
+		<include layout="@layout/circle"/>
+		<include layout="@layout/circle"/>
+		<include layout="@layout/circle"/>
+		<include layout="@layout/circle"/>
+		<include layout="@layout/circle"/>
+		<include layout="@layout/circle"/>
+		<include layout="@layout/circle"/>
+		<include layout="@layout/circle"/>
+		<include layout="@layout/circle"/>
+		<include layout="@layout/circle"/>
+		<include layout="@layout/circle"/>
+		<include layout="@layout/circle"/>
+		<include layout="@layout/circle"/>
+		<include layout="@layout/circle"/>
+		<include layout="@layout/circle"/>
+		<include layout="@layout/circle"/>
+		<include layout="@layout/circle"/>
+		<include layout="@layout/circle"/>
+		<include layout="@layout/circle"/>
+		<include layout="@layout/circle"/>
+		<include layout="@layout/circle"/>
+		<include layout="@layout/circle"/>
+		<include layout="@layout/circle"/>
+		<include layout="@layout/circle"/>
+		<include layout="@layout/circle"/>
+		<include layout="@layout/circle"/>
+		<include layout="@layout/circle"/>
+		<include layout="@layout/circle"/>
+		<include layout="@layout/circle"/>
+		<include layout="@layout/circle"/>
+		<include layout="@layout/circle"/>
+		<include layout="@layout/circle"/>
+		
 		
       
     </com.github.riotopsys.hexgrid.HexGrid>
