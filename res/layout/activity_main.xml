@@ -8,13 +8,13 @@
     <com.github.riotopsys.hexgrid.HexGrid
         android:id="@+id/hexGrid1"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        app:start_indented="true"
-        app:max_columns="5"
-        app:max_rows="5"
-        app:radius="62dp" >
+        app:max_columns="3"
+        app:max_rows="3"
+        app:radius="62dp"
+        app:start_indented="true" >
 
         <include layout="@layout/circle" />
 

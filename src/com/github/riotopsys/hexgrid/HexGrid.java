@@ -29,6 +29,7 @@ public class HexGrid extends ViewGroup {
 
 	@SuppressWarnings("unused")
 	private static final String TAG = HexGrid.class.getSimpleName();
+	
 	private int r = (int) TypedValue
 			.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 48, getResources()
 					.getDisplayMetrics());
@@ -77,11 +78,9 @@ public class HexGrid extends ViewGroup {
 
 		widthSegment = (int) (Math.sqrt(3) * r);
 		widthExcess = (int) (r / Math.sqrt(3));
-		// Log.i(TAG, String.format("ws %d, we %d", widthSegment, widthExcess));
 
 		int width = MeasureSpec.getSize(widthMeasureSpec);
 		int height = MeasureSpec.getSize(heightMeasureSpec);
-		// Log.i(TAG, String.format("w %d, h %d", width, height));
 
 		int usableWidth = width - (getPaddingLeft() + getPaddingRight())
 				- widthExcess;
@@ -92,27 +91,29 @@ public class HexGrid extends ViewGroup {
 
 		hCount = (usableHeight) / (2 * r);
 		hCount = Math.min(hCount, maxRows);
-		// Log.i(TAG, String.format("wc %d, hc %d", wCount, hCount));
 
 		unusedWidth = usableWidth - wCount * widthSegment;
 		unusedHeight = usableHeight - hCount * (2 * r);
-		// Log.i(TAG, String.format("unusedWidth %d, unusedHeight %d",
-		// unusedWidth, unusedHeight));
 
 		supportedChildern = wCount * hCount - (wCount / 2);
 		if (startIndented) {
 			supportedChildern--;
 		}
 
-		// Log.i(TAG, String.format("sc %d", supportedChildern));
-		// Log.i(TAG, "run over");
-
-		// Log.i(TAG, String.format("r %d, unusedHeight %d", r, unusedHeight));
-
 		// Find out how big everyone wants to be
-		measureChildren(
-				MeasureSpec.makeMeasureSpec(2 * r, MeasureSpec.EXACTLY),
-				MeasureSpec.makeMeasureSpec(2 * r, MeasureSpec.EXACTLY));
+		int spec = MeasureSpec.makeMeasureSpec(2 * r, MeasureSpec.EXACTLY);
+		measureChildren(spec, spec);
+
+		//adjust for smallest size
+		if (MeasureSpec.getMode(widthMeasureSpec) == MeasureSpec.AT_MOST) {
+			width -= unusedWidth;
+			unusedWidth = 0;
+		}
+
+		if (MeasureSpec.getMode(heightMeasureSpec) == MeasureSpec.AT_MOST) {
+			height -= unusedHeight;
+			unusedHeight = 0;
+		}
 
 		// Check against minimum height and width
 		width = Math.max(width, getSuggestedMinimumWidth());
@@ -140,7 +141,6 @@ public class HexGrid extends ViewGroup {
 		int topPositionFudge = getPaddingTop() + (unusedHeight / 2);
 
 		for (int c = 0; c < supportedChildern; c++) {
-			// Log.i(TAG, String.format("a %d, b %d, c %d", a, b, c));
 			View child = getChildAt(c);
 			if (child == null) {
 				break;
@@ -148,13 +148,9 @@ public class HexGrid extends ViewGroup {
 			if (child.getVisibility() != GONE) {
 				int childLeft = a * widthSegment + leftPositionFudge;
 				int childTop = b * 2 * r + topPositionFudge;
-				// Log.i(TAG, String.format("%d + %d * 2 * %d", getPaddingTop(),
-				// b, r));
 				if ((a % 2) == 1 ^ startIndented) {
 					childTop += r;
 				}
-				// Log.i(TAG, String.format("childLeft %d, childTop %d",
-				// childLeft, childTop));
 				child.layout(childLeft, childTop,
 						childLeft + child.getMeasuredWidth(),
 						childTop + child.getMeasuredHeight());
@@ -204,10 +200,6 @@ public class HexGrid extends ViewGroup {
 
 		public LayoutParams(Context c, AttributeSet attrs) {
 			super(c, attrs);
-			// TypedArray a = c.obtainStyledAttributes(attrs,
-			// R.styleable.Hexgrid);
-			// r = a.getDimensionPixelOffset(R.styleable.Hexgrid_radius, 0);
-			// a.recycle();
 		}
 
 		/**
