@@ -39,6 +39,9 @@ public class HexGrid extends ViewGroup {
 	private int unusedWidth;
 	private int unusedHeight;
 	private int supportedChildern;
+	private boolean startIndented = false;
+	private int maxColumns = Integer.MAX_VALUE;
+	private int maxRows = Integer.MAX_VALUE;
 
 	public HexGrid(Context context) {
 		super(context);
@@ -60,6 +63,13 @@ public class HexGrid extends ViewGroup {
 		r = a.getDimensionPixelOffset(R.styleable.Hexgrid_radius,
 				(int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP,
 						48, getResources().getDisplayMetrics()));
+
+		startIndented = a.getBoolean(R.styleable.Hexgrid_start_indented, false);
+		maxColumns = a.getInteger(R.styleable.Hexgrid_max_columns,
+				Integer.MAX_VALUE);
+		maxRows = a.getInteger(R.styleable.Hexgrid_max_rows,
+				Integer.MAX_VALUE);
+
 		a.recycle();
 	}
 
@@ -79,7 +89,10 @@ public class HexGrid extends ViewGroup {
 		int usableHeight = height - (getPaddingTop() + getPaddingBottom());
 
 		wCount = usableWidth / widthSegment;
+		wCount = Math.min(wCount, maxColumns);
+		
 		hCount = (usableHeight) / (2 * r);
+		hCount = Math.min(hCount, maxRows);
 		// Log.i(TAG, String.format("wc %d, hc %d", wCount, hCount));
 
 		unusedWidth = usableWidth - wCount * widthSegment;
@@ -88,6 +101,10 @@ public class HexGrid extends ViewGroup {
 		// unusedWidth, unusedHeight));
 
 		supportedChildern = wCount * hCount - (wCount / 2);
+		if ( startIndented ){
+			supportedChildern--;
+		}
+		
 		// Log.i(TAG, String.format("sc %d", supportedChildern));
 		// Log.i(TAG, "run over");
 
@@ -130,7 +147,7 @@ public class HexGrid extends ViewGroup {
 				int childTop = getPaddingTop() + b * 2 * r + (unusedHeight / 2);
 				// Log.i(TAG, String.format("%d + %d * 2 * %d", getPaddingTop(),
 				// b, r));
-				if ((a % 2) == 1) {
+				if ((a % 2) == 1 ^ startIndented) {
 					childTop += r;
 				}
 				// Log.i(TAG, String.format("childLeft %d, childTop %d",
@@ -140,7 +157,7 @@ public class HexGrid extends ViewGroup {
 						childTop + child.getMeasuredHeight());
 			}
 			b++;
-			if ((a % 2) == 0) {
+			if ((a % 2) == 0 ^ startIndented) {
 				if (b >= hCount) {
 					b = 0;
 					a++;

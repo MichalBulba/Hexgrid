@@ -11,6 +11,9 @@
         android:layout_height="match_parent"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
+        app:start_indented="true"
+        app:max_columns="5"
+        app:max_rows="5"
         app:radius="62dp" >
 
         <include layout="@layout/circle" />
