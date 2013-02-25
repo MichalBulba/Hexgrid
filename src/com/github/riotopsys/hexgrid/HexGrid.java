@@ -67,8 +67,7 @@ public class HexGrid extends ViewGroup {
 		startIndented = a.getBoolean(R.styleable.Hexgrid_start_indented, false);
 		maxColumns = a.getInteger(R.styleable.Hexgrid_max_columns,
 				Integer.MAX_VALUE);
-		maxRows = a.getInteger(R.styleable.Hexgrid_max_rows,
-				Integer.MAX_VALUE);
+		maxRows = a.getInteger(R.styleable.Hexgrid_max_rows, Integer.MAX_VALUE);
 
 		a.recycle();
 	}
@@ -90,7 +89,7 @@ public class HexGrid extends ViewGroup {
 
 		wCount = usableWidth / widthSegment;
 		wCount = Math.min(wCount, maxColumns);
-		
+
 		hCount = (usableHeight) / (2 * r);
 		hCount = Math.min(hCount, maxRows);
 		// Log.i(TAG, String.format("wc %d, hc %d", wCount, hCount));
@@ -101,19 +100,19 @@ public class HexGrid extends ViewGroup {
 		// unusedWidth, unusedHeight));
 
 		supportedChildern = wCount * hCount - (wCount / 2);
-		if ( startIndented ){
+		if (startIndented) {
 			supportedChildern--;
 		}
-		
+
 		// Log.i(TAG, String.format("sc %d", supportedChildern));
 		// Log.i(TAG, "run over");
 
 		// Log.i(TAG, String.format("r %d, unusedHeight %d", r, unusedHeight));
 
 		// Find out how big everyone wants to be
-		measureChildren(MeasureSpec.makeMeasureSpec(4 * widthExcess,
-				MeasureSpec.EXACTLY), MeasureSpec.makeMeasureSpec(2 * r,
-				MeasureSpec.EXACTLY));
+		measureChildren(
+				MeasureSpec.makeMeasureSpec(2 * r, MeasureSpec.EXACTLY),
+				MeasureSpec.makeMeasureSpec(2 * r, MeasureSpec.EXACTLY));
 
 		// Check against minimum height and width
 		width = Math.max(width, getSuggestedMinimumWidth());
@@ -135,6 +134,11 @@ public class HexGrid extends ViewGroup {
 		int a;
 		int b;
 		a = b = 0;
+
+		int leftPositionFudge = getPaddingLeft() + (unusedWidth / 2)
+				+ (4 * widthExcess - 2 * r) / 2;
+		int topPositionFudge = getPaddingTop() + (unusedHeight / 2);
+
 		for (int c = 0; c < supportedChildern; c++) {
 			// Log.i(TAG, String.format("a %d, b %d, c %d", a, b, c));
 			View child = getChildAt(c);
@@ -142,9 +146,8 @@ public class HexGrid extends ViewGroup {
 				break;
 			}
 			if (child.getVisibility() != GONE) {
-				int childLeft = getPaddingLeft() + a * widthSegment
-						+ (unusedWidth / 2);
-				int childTop = getPaddingTop() + b * 2 * r + (unusedHeight / 2);
+				int childLeft = a * widthSegment + leftPositionFudge;
+				int childTop = b * 2 * r + topPositionFudge;
 				// Log.i(TAG, String.format("%d + %d * 2 * %d", getPaddingTop(),
 				// b, r));
 				if ((a % 2) == 1 ^ startIndented) {
